@@ -53,3 +53,26 @@ def forward_selection(data, total_features):
             break
     
     return selected_features, best_accuracy      
+
+def backward_elimination(data, total_features):
+    selected_features = list(range(1, total_features + 1))
+    best_accuracy = 0
+    
+    while True:
+        best_round_accuracy = 0
+        
+        for f in range(1, total_features + 1): 
+            if f  in selected_features:
+                candidate = [x for x in selected_features if x != f]
+                accuracy = loo_cv_accuracy(data, candidate)
+                if accuracy > best_round_accuracy:
+                    best_round_accuracy = accuracy
+                    best_feature = f
+        
+        if best_round_accuracy > best_accuracy :  
+            best_accuracy = best_round_accuracy                
+            selected_features.remove(best_feature)
+        else:
+            break
+    
+    return selected_features, best_accuracy
