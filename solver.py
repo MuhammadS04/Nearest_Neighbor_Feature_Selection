@@ -1,5 +1,5 @@
 
-def euclidan_distance(list1, list2):
+def euclidean_distance(list1, list2):
     distance = 0
     for i in range(len(list1)):
         distance += (list1[i] - list2[i]) ** 2
@@ -20,7 +20,7 @@ def loo_cv_accuracy(data, features):
             point1 = [data[i][f] for f in features]
             point2 = [data[j][f] for f in features]
 
-            distance = euclidan_distance(point1, point2)
+            distance = euclidean_distance(point1, point2)
 
             if distance < best_distance:
                 best_distance = distance
@@ -42,6 +42,8 @@ def forward_selection(data, total_features):
             if f not in selected_features:
                 candidate = selected_features + [f]
                 accuracy = loo_cv_accuracy(data, candidate)
+                print(f"Using feature(s): {candidate} accuracy is {accuracy:.4f}")
+
                 if accuracy > best_round_accuracy:
                     best_round_accuracy = accuracy
                     best_feature = f
@@ -49,9 +51,10 @@ def forward_selection(data, total_features):
         if best_round_accuracy > best_accuracy :  
             best_accuracy = best_round_accuracy                
             selected_features.append(best_feature)
+            print(f"Feature set {best_feature} was best, accuracy is {best_round_accuracy:.4f}")
         else:
             break
-    
+    print(f"Finished search!! The best feature subset is", selected_features, "with an accuracy of", best_accuracy)
     return selected_features, best_accuracy      
 
 def backward_elimination(data, total_features):
@@ -65,14 +68,46 @@ def backward_elimination(data, total_features):
             if f  in selected_features:
                 candidate = [x for x in selected_features if x != f]
                 accuracy = loo_cv_accuracy(data, candidate)
+                print(f"Using feature(s): {candidate} accuracy is {accuracy:.4f}")
+
                 if accuracy > best_round_accuracy:
                     best_round_accuracy = accuracy
                     best_feature = f
+
         
         if best_round_accuracy > best_accuracy :  
             best_accuracy = best_round_accuracy                
             selected_features.remove(best_feature)
+            print(f"Feature set {best_feature} was best, accuracy is {best_round_accuracy:.4f}")
+
         else:
             break
     
+    print(f"Finished search!! The best feature subset is", selected_features, "with an accuracy of", best_accuracy)
     return selected_features, best_accuracy
+
+
+def load_data(filepath):
+    data = []
+    with open(filepath, "r") as f:
+        for line in f:
+            if line.strip():  # skip empty lines
+                row = [float(x) for x in line.split()]
+                data.append(row)
+    return data
+
+def main():
+    file = input("Welcome to Muhammad Sabeel's Nearest Neighbor Feature Selection Algorithm:\n Enter the file path you'd like to run: ")
+    data = load_data(file)
+    total_features = len(data[0]) - 1
+    alg = int(input("What algorithm?\n (1) Forward Selection\n (2) Backward Elimination: "))
+    print(f"Data loaded successfully. Number of features:", (total_features), "Number of instances (not including label):", len(data))
+    if alg == 1:
+        selected_features, accuracy = forward_selection(data, total_features)
+    if alg == 2:
+        selected_features, accuracy = backward_elimination(data, total_features)
+    print("Best features found:", selected_features)
+    print("Accuracy:", accuracy)
+
+if __name__ == "__main__":
+    main()
