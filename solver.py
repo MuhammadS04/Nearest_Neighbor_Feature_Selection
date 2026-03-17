@@ -31,3 +31,25 @@ def loo_cv_accuracy(data, features):
 
     return correct / len(data)
 
+def forward_selection(data, total_features):
+    selected_features = []
+    best_accuracy = 0
+    
+    while True:
+        best_round_accuracy = 0
+        
+        for f in range(1, total_features + 1): 
+            if f not in selected_features:
+                candidate = selected_features + [f]
+                accuracy = loo_cv_accuracy(data, candidate)
+                if accuracy > best_round_accuracy:
+                    best_round_accuracy = accuracy
+                    best_feature = f
+        
+        if best_round_accuracy > best_accuracy :  
+            best_accuracy = best_round_accuracy                
+            selected_features.append(best_feature)
+        else:
+            break
+    
+    return selected_features, best_accuracy      
