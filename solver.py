@@ -1,3 +1,5 @@
+import time
+import os
 
 def euclidean_distance(list1, list2):
     distance = 0
@@ -96,16 +98,35 @@ def load_data(filepath):
                 data.append(row)
     return data
 
+def load_directory(directory):
+    all_data = []
+    for filename in os.listdir(directory):
+        all_data += load_data(os.path.join(directory, filename))
+    return all_data
+
 def main():
-    file = input("Welcome to Muhammad Sabeel's Nearest Neighbor Feature Selection Algorithm:\n Enter the file path you'd like to run: ")
-    data = load_data(file)
+    type = int(input("Welcome to Muhammad Sabeel's Nearest Neighbor Feature Selection Algorithm:\n Are you loading a (1) single file or (2) directory? "))
+    file = (input("\nEnter file/directory name: "))
+
+    if type == 1:
+        data = load_data(file)
+    if type == 2:
+        data = load_directory(file)
+
     total_features = len(data[0]) - 1
     alg = int(input("What algorithm?\n (1) Forward Selection\n (2) Backward Elimination: "))
     print(f"Data loaded successfully. Number of features:", (total_features), "Number of instances (not including label):", len(data))
+
+    start = time.time()  # ← start here
+
     if alg == 1:
         selected_features, accuracy = forward_selection(data, total_features)
     if alg == 2:
         selected_features, accuracy = backward_elimination(data, total_features)
+
+    end = time.time()    # ← end here
+    print(f"Time taken to run on this dataset: {end - start:.2f} seconds")
+
     print("Best features found:", selected_features)
     print("Accuracy:", accuracy)
 

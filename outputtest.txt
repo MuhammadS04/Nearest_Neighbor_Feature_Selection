@@ -1,42 +1,63 @@
 Welcome to Muhammad Sabeel's Nearest Neighbor Feature Selection Algorithm:
- Enter the file path you'd like to run: What algorithm?
+ Are you loading a (1) single file or (2) directory? 
+Enter file/directory name: What algorithm?
  (1) Forward Selection
- (2) Backward Elimination: Data loaded successfully. Number of features: 12 Number of instances (not including label): 1000
-Using feature(s): [1] accuracy is 0.6710
-Using feature(s): [2] accuracy is 0.7440
-Using feature(s): [3] accuracy is 0.6550
-Using feature(s): [4] accuracy is 0.6760
-Using feature(s): [5] accuracy is 0.6810
-Using feature(s): [6] accuracy is 0.6600
-Using feature(s): [7] accuracy is 0.6650
-Using feature(s): [8] accuracy is 0.6480
-Using feature(s): [9] accuracy is 0.6500
-Using feature(s): [10] accuracy is 0.8260
-Using feature(s): [11] accuracy is 0.6610
-Using feature(s): [12] accuracy is 0.6530
-Feature set 10 was best, accuracy is 0.8260
-Using feature(s): [10, 1] accuracy is 0.8260
-Using feature(s): [10, 2] accuracy is 0.9710
-Using feature(s): [10, 3] accuracy is 0.8320
-Using feature(s): [10, 4] accuracy is 0.8500
-Using feature(s): [10, 5] accuracy is 0.8520
-Using feature(s): [10, 6] accuracy is 0.8210
-Using feature(s): [10, 7] accuracy is 0.8350
-Using feature(s): [10, 8] accuracy is 0.8530
-Using feature(s): [10, 9] accuracy is 0.8420
-Using feature(s): [10, 11] accuracy is 0.8340
-Using feature(s): [10, 12] accuracy is 0.8540
-Feature set 2 was best, accuracy is 0.9710
-Using feature(s): [10, 2, 1] accuracy is 0.9460
-Using feature(s): [10, 2, 3] accuracy is 0.9360
-Using feature(s): [10, 2, 4] accuracy is 0.9430
-Using feature(s): [10, 2, 5] accuracy is 0.9440
-Using feature(s): [10, 2, 6] accuracy is 0.9490
-Using feature(s): [10, 2, 7] accuracy is 0.9380
-Using feature(s): [10, 2, 8] accuracy is 0.9600
-Using feature(s): [10, 2, 9] accuracy is 0.9300
-Using feature(s): [10, 2, 11] accuracy is 0.9370
-Using feature(s): [10, 2, 12] accuracy is 0.9420
-Finished search!! The best feature subset is [10, 2] with an accuracy of 0.971
-Best features found: [10, 2]
-Accuracy: 0.971
+ (2) Backward Elimination: Data loaded successfully. Number of features: 12 Number of instances (not including label): 2000
+Using feature(s): [1] accuracy is 0.6780
+Using feature(s): [2] accuracy is 0.7100
+Using feature(s): [3] accuracy is 0.6670
+Using feature(s): [4] accuracy is 0.6880
+Using feature(s): [5] accuracy is 0.6725
+Using feature(s): [6] accuracy is 0.6760
+Using feature(s): [7] accuracy is 0.7240
+Using feature(s): [8] accuracy is 0.6705
+Using feature(s): [9] accuracy is 0.6590
+Using feature(s): [10] accuracy is 0.7300
+Using feature(s): [11] accuracy is 0.6805
+Using feature(s): [12] accuracy is 0.6825
+Feature set 10 was best, accuracy is 0.7300
+Using feature(s): [10, 1] accuracy is 0.7255
+Using feature(s): [10, 2] accuracy is 0.7795
+Using feature(s): [10, 3] accuracy is 0.7335
+Using feature(s): [10, 4] accuracy is 0.7265
+Using feature(s): [10, 5] accuracy is 0.7570
+Using feature(s): [10, 6] accuracy is 0.7315
+Using feature(s): [10, 7] accuracy is 0.7670
+Using feature(s): [10, 8] accuracy is 0.7420
+Using feature(s): [10, 9] accuracy is 0.7320
+Using feature(s): [10, 11] accuracy is 0.7210
+Using feature(s): [10, 12] accuracy is 0.7580
+Feature set 2 was best, accuracy is 0.7795
+Using feature(s): [10, 2, 1] accuracy is 0.7690
+Using feature(s): [10, 2, 3] accuracy is 0.7675
+Using feature(s): [10, 2, 4] accuracy is 0.7695
+Using feature(s): [10, 2, 5] accuracy is 0.7655
+Using feature(s): [10, 2, 6] accuracy is 0.7805
+Using feature(s): [10, 2, 7] accuracy is 0.7975
+Using feature(s): [10, 2, 8] accuracy is 0.7760
+Using feature(s): [10, 2, 9] accuracy is 0.7705
+Using feature(s): [10, 2, 11] accuracy is 0.7710
+Using feature(s): [10, 2, 12] accuracy is 0.7710
+Feature set 7 was best, accuracy is 0.7975
+Using feature(s): [10, 2, 7, 1] accuracy is 0.7810
+Using feature(s): [10, 2, 7, 3] accuracy is 0.7670
+Using feature(s): [10, 2, 7, 4] accuracy is 0.7800
+Using feature(s): [10, 2, 7, 5] accuracy is 0.7775
+Using feature(s): [10, 2, 7, 6] accuracy is 0.7865
+Using feature(s): [10, 2, 7, 8] accuracy is 0.7880
+Using feature(s): [10, 2, 7, 9] accuracy is 0.7810
+Using feature(s): [10, 2, 7, 11] accuracy is 0.7800
+Using feature(s): [10, 2, 7, 12] accuracy is 0.8125
+Feature set 12 was best, accuracy is 0.8125
+Using feature(s): [10, 2, 7, 12, 1] accuracy is 0.7735
+Using feature(s): [10, 2, 7, 12, 3] accuracy is 0.7740
+Using feature(s): [10, 2, 7, 12, 4] accuracy is 0.7745
+Using feature(s): [10, 2, 7, 12, 5] accuracy is 0.7940
+Using feature(s): [10, 2, 7, 12, 6] accuracy is 0.7845
+Using feature(s): [10, 2, 7, 12, 8] accuracy is 0.7880
+Using feature(s): [10, 2, 7, 12, 9] accuracy is 0.7785
+Using feature(s): [10, 2, 7, 12, 11] accuracy is 0.7885
+Finished search!! The best feature subset is [10, 2, 7, 12] with an accuracy of 0.8125
+Time taken to run on this dataset: 107.80 seconds
+Best features found: [10, 2, 7, 12]
+Accuracy: 0.8125

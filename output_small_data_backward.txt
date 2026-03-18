@@ -1,0 +1,106 @@
+Welcome to Muhammad Sabeel's Nearest Neighbor Feature Selection Algorithm:
+ Are you loading a (1) single file or (2) directory? 
+Enter file/directory name: What algorithm?
+ (1) Forward Selection
+ (2) Backward Elimination: Data loaded successfully. Number of features: 16 Number of instances (not including label): 500
+Using feature(s): [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7380
+Using feature(s): [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7180
+Using feature(s): [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7380
+Using feature(s): [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7340
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7380
+Using feature(s): [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7240
+Using feature(s): [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7400
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7340
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16] accuracy is 0.7260
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16] accuracy is 0.7320
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7420
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16] accuracy is 0.6980
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16] accuracy is 0.7380
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16] accuracy is 0.7240
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16] accuracy is 0.6880
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] accuracy is 0.7180
+Feature set 11 was best, accuracy is 0.7420
+Using feature(s): [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7500
+Using feature(s): [1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7140
+Using feature(s): [1, 2, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7420
+Using feature(s): [1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7580
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7640
+Using feature(s): [1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7200
+Using feature(s): [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7440
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7560
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15, 16] accuracy is 0.7560
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16] accuracy is 0.7420
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 14, 15, 16] accuracy is 0.7260
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16] accuracy is 0.7580
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 15, 16] accuracy is 0.7480
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 16] accuracy is 0.7100
+Using feature(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15] accuracy is 0.7280
+Feature set 5 was best, accuracy is 0.7640
+Using feature(s): [2, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7560
+Using feature(s): [1, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7560
+Using feature(s): [1, 2, 4, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7440
+Using feature(s): [1, 2, 3, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7720
+Using feature(s): [1, 2, 3, 4, 7, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7480
+Using feature(s): [1, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7600
+Using feature(s): [1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7760
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 10, 12, 13, 14, 15, 16] accuracy is 0.7560
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 12, 13, 14, 15, 16] accuracy is 0.7480
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 10, 13, 14, 15, 16] accuracy is 0.7340
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 14, 15, 16] accuracy is 0.7420
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13, 15, 16] accuracy is 0.7240
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 16] accuracy is 0.7060
+Using feature(s): [1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 15] accuracy is 0.7440
+Feature set 8 was best, accuracy is 0.7760
+Using feature(s): [2, 3, 4, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7800
+Using feature(s): [1, 3, 4, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7660
+Using feature(s): [1, 2, 4, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7720
+Using feature(s): [1, 2, 3, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7940
+Using feature(s): [1, 2, 3, 4, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7520
+Using feature(s): [1, 2, 3, 4, 6, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7660
+Using feature(s): [1, 2, 3, 4, 6, 7, 10, 12, 13, 14, 15, 16] accuracy is 0.7580
+Using feature(s): [1, 2, 3, 4, 6, 7, 9, 12, 13, 14, 15, 16] accuracy is 0.7720
+Using feature(s): [1, 2, 3, 4, 6, 7, 9, 10, 13, 14, 15, 16] accuracy is 0.7380
+Using feature(s): [1, 2, 3, 4, 6, 7, 9, 10, 12, 14, 15, 16] accuracy is 0.7400
+Using feature(s): [1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 15, 16] accuracy is 0.7800
+Using feature(s): [1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 14, 16] accuracy is 0.7420
+Using feature(s): [1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 14, 15] accuracy is 0.7560
+Feature set 4 was best, accuracy is 0.7940
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.8000
+Using feature(s): [1, 3, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7560
+Using feature(s): [1, 2, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7840
+Using feature(s): [1, 2, 3, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7640
+Using feature(s): [1, 2, 3, 6, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7740
+Using feature(s): [1, 2, 3, 6, 7, 10, 12, 13, 14, 15, 16] accuracy is 0.7620
+Using feature(s): [1, 2, 3, 6, 7, 9, 12, 13, 14, 15, 16] accuracy is 0.7700
+Using feature(s): [1, 2, 3, 6, 7, 9, 10, 13, 14, 15, 16] accuracy is 0.7540
+Using feature(s): [1, 2, 3, 6, 7, 9, 10, 12, 14, 15, 16] accuracy is 0.7880
+Using feature(s): [1, 2, 3, 6, 7, 9, 10, 12, 13, 15, 16] accuracy is 0.7800
+Using feature(s): [1, 2, 3, 6, 7, 9, 10, 12, 13, 14, 16] accuracy is 0.7320
+Using feature(s): [1, 2, 3, 6, 7, 9, 10, 12, 13, 14, 15] accuracy is 0.7720
+Feature set 1 was best, accuracy is 0.8000
+Using feature(s): [3, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7680
+Using feature(s): [2, 6, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7920
+Using feature(s): [2, 3, 7, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7720
+Using feature(s): [2, 3, 6, 9, 10, 12, 13, 14, 15, 16] accuracy is 0.7880
+Using feature(s): [2, 3, 6, 7, 10, 12, 13, 14, 15, 16] accuracy is 0.7640
+Using feature(s): [2, 3, 6, 7, 9, 12, 13, 14, 15, 16] accuracy is 0.7820
+Using feature(s): [2, 3, 6, 7, 9, 10, 13, 14, 15, 16] accuracy is 0.7800
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 14, 15, 16] accuracy is 0.8120
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 13, 15, 16] accuracy is 0.8020
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 13, 14, 16] accuracy is 0.7580
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 13, 14, 15] accuracy is 0.7740
+Feature set 13 was best, accuracy is 0.8120
+Using feature(s): [3, 6, 7, 9, 10, 12, 14, 15, 16] accuracy is 0.7680
+Using feature(s): [2, 6, 7, 9, 10, 12, 14, 15, 16] accuracy is 0.7960
+Using feature(s): [2, 3, 7, 9, 10, 12, 14, 15, 16] accuracy is 0.7940
+Using feature(s): [2, 3, 6, 9, 10, 12, 14, 15, 16] accuracy is 0.8060
+Using feature(s): [2, 3, 6, 7, 10, 12, 14, 15, 16] accuracy is 0.7720
+Using feature(s): [2, 3, 6, 7, 9, 12, 14, 15, 16] accuracy is 0.8020
+Using feature(s): [2, 3, 6, 7, 9, 10, 14, 15, 16] accuracy is 0.8040
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 15, 16] accuracy is 0.7900
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 14, 16] accuracy is 0.7380
+Using feature(s): [2, 3, 6, 7, 9, 10, 12, 14, 15] accuracy is 0.7860
+Finished search!! The best feature subset is [2, 3, 6, 7, 9, 10, 12, 14, 15, 16] with an accuracy of 0.812
+Time taken to run on this dataset: 31.75 seconds
+Best features found: [2, 3, 6, 7, 9, 10, 12, 14, 15, 16]
+Accuracy: 0.812
